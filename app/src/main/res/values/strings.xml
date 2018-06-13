@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">DevZone</string>
-    <string name="facebook_app_id">1851864965122635</string>
-    <string name="fb_login_protocol_scheme">fb1851864965122635</string>
+    <string name="ask_question_here">ASK QUESTION HERE</string>
 </resources>
