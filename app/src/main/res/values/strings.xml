@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">DevZone</string>
     <string name="ask_question_here">ASK QUESTION HERE</string>
+    <string name="ask_your_question">ASK YOUR QUESTION</string>
+    <string name="ask">ASK</string>
+
+    <string-array name="question_types">
+        <item>WEB</item>
+        <item>ANDROID</item>
+        <item>DESIGN</item>
+    </string-array>
 </resources>
