@@ -19,9 +19,10 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="ng.com.devlanterns.devzone.SignIn"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+        <activity android:name=".Ask_Question_Activity" />
+
+        <activity android:name=".SignIn_Activity" />
+
     </application>
 
 </manifest>
