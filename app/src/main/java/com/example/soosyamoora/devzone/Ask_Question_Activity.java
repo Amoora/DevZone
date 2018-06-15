@@ -87,11 +87,9 @@ public class Ask_Question_Activity extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(),
                                                 "Your Question is not sent please connect to a network, Thanks",
                                                 Toast.LENGTH_LONG).show();
-
                                     }
                                 }
                             });
-
                 }
             }
         });
