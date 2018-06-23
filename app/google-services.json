@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "628153764652",
+    "firebase_url": "https://devzone-8a221.firebaseio.com",
+    "project_id": "devzone-8a221",
+    "storage_bucket": "devzone-8a221.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628153764652:android:c193660a3243060c",
+        "android_client_info": {
+          "package_name": "com.example.soosyamoora.devzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628153764652-ul89e1h2b0lgjqsnq5q4tt1dkd8jfnk1.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "628153764652-ul89e1h2b0lgjqsnq5q4tt1dkd8jfnk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF9LYx6eEcqYxASW8N--8qopemKN_eWgI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
