@@ -3,6 +3,9 @@
     <string name="ask_question_here">ASK QUESTION HERE</string>
     <string name="ask_your_question">ASK YOUR QUESTION</string>
     <string name="ask">ASK</string>
+    <string name="question_type">Question Type</string>
+    <string name="question">Question</string>
+    <string name="answer">ANSWER</string>
 
     <string-array name="question_types">
         <item>WEB</item>
