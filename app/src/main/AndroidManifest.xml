@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".Ask_Question_Activity" />
         <activity android:name=".SignIn_Activity" />
-        <activity android:name=".ListOfQuestions"></activity>
+        <activity android:name=".ListOfQuestions" />
+        <activity android:name=".SplashScreen" />
     </application>
 
 </manifest>
