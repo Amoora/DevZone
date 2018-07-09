@@ -3,4 +3,6 @@
     <string name="ask_question_here">ASK QUESTION HERE</string>
     <string name="facebook_app_id">577516825950920</string>
     <string name="fb_login_protocol_scheme">fb577516825950920</string>
+    <string name="ask_your_question">ASK YOUR QUESTION</string>
+    <string name="ask">ASK</string>
 </resources>

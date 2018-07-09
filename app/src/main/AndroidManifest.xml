@@ -48,6 +48,14 @@
             android:name=".ListDevComm"
             android:label="Developer Communities">
 
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--&lt;!&ndash; <category android:name="android.intent.category.BROWSABLE" /> &ndash;&gt;-->
+            <!--<data android:scheme="@string/fb_login_protocol_scheme" />-->
+            <!--</intent-filter>-->
+
         </activity>
     </application>
 

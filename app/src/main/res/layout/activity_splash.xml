@@ -3,15 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E53935"
+    android:background="@drawable/logo"
     tools:context=".SplashScreen">
 
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="match_parent"
-        android:paddingLeft="100dp"
-        android:paddingTop="50dp"
-        android:src="@drawable/ic_computer_black_24dp" />
 
     <TextView
         android:layout_width="wrap_content"

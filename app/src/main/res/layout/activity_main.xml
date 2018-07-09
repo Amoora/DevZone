@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:clipToPadding="false">
         <android.support.v7.widget.CardView
@@ -23,11 +24,11 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/redPrimaryDark"
                     android:padding="10dp"
                     android:src="@drawable/ic_computer_black_24dp"/>
                 <TextView
-                    android:onClick="devCommunity"
+                    android:id="@+id/devcommtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -52,7 +53,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/redPrimaryDark"
                     android:padding="10dp"
                     android:src="@drawable/ic_people_outline_black_24dp"/>
                 <TextView
@@ -86,7 +87,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/redPrimaryDark"
                     android:padding="10dp"
                     android:src="@drawable/ic_perm_device_information_black_24dp"/>
                 <TextView
@@ -114,7 +115,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/ic_search_black_24dp"
+                    android:background="@color/redPrimaryDark"
                     android:padding="10dp"
                     android:src="@drawable/ic_search_black_24dp"/>
                 <TextView
