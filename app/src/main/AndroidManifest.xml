@@ -21,7 +21,8 @@
         <activity android:name=".Ask_Question_Activity" />
         <activity android:name=".SignIn_Activity" />
         <activity android:name=".ListOfQuestions" />
-        <activity android:name=".SplashScreen" />
+        <activity android:name=".ListDevComm"/>
+
     </application>
 
 </manifest>
