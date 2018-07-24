@@ -1,0 +1,116 @@
+{
+  "Contacts":[
+
+    {
+      "id": "0",
+      "name": "ALMUSTAPHA ABDULLAHI WAKILI",
+      "phone": "08165869402",
+      "email": "almusty4tech@gmail.com",
+      "github": "@binwakil",
+      "hub": "LiteTech Consult ",
+      "area": "Database Administrator",
+      "Specialzation": "ORACLE DBA",
+      "image": "R.drawable.imga"
+    },
+    {
+      "id": "1",
+      "name": "SHAHID SANI ABDULLAHI",
+      "phone": "07054148512",
+      "email": "sdaura@gmail.com",
+      "github": "@sdaura",
+      "hub": "FlexiSaf Edusoft LTD",
+      "area": "Mobile Developer",
+      "specialzation": "Java, Kotlin",
+      "image": "R.drawable.imgd"
+    },
+    {
+      "id": "2",
+      "name": "ALIYU I SULAIMAN",
+      "phone": "08165869402",
+      "email": "aliyuis@gmail.com",
+      "github": "@aliyuprof",
+      "hub": "DIP hub",
+      "area": ".Net Developer",
+      "specialzation": "VB, ElectronJS",
+      "image": "R.drawable.imgp"
+    },
+    {
+      "id": "3",
+      "name": "SAADAT UMAR ALIYU",
+      "phone": "08165869402",
+      "email": "soosyamoora@gmail.com",
+      "github": "@amoora",
+      "hub": "Developer's IT Hub",
+      "area": "Web Development",
+      "specialzation": "PHP, HTML5",
+      "image": "R.drawable.imgs"
+    },
+    {
+      "id": "4",
+      "name": "AISHA ABDULHAMID",
+      "phone": "08165869402",
+      "email": "developer@hisemail.com",
+      "github": "@Developer",
+      "hub": "Developer's IT Hub",
+      "area": "Web Development",
+      "specialzation": "PHP, HTML5",
+      "image": "R.drawable.imga"
+    },
+    {
+      "id": "5",
+      "name": "ALMUSTAPHA ABDULLAHI WAKILI",
+      "phone": "08165869402",
+      "email": "developer@hisemail.com",
+      "github": "@Developer",
+      "hub": "Developer's IT Hub",
+      "area": "Web Development",
+      "specialzation": "PHP, HTML5",
+      "image": "R.drawable.imga"
+    },
+    {
+      "id": "6",
+      "name": "SHAHID SANI ABDULLAHI",
+      "phone": "08165869402",
+      "email": "developer@hisemail.com",
+      "github": "@Developer",
+      "hub": "Developer's IT Hub",
+      "area": "Web Development",
+      "specialzation": "PHP, HTML5",
+      "image": "R.drawable.imgd"
+    },
+    {
+      "id": "7",
+      "name": "ALIYU SULAIMAN",
+      "phone": "08165869402",
+      "email": "developer@hisemail.com",
+      "github": "@Developer",
+      "hub": "Developer's IT Hub",
+      "area": "Web Development",
+      "specialzation": "PHP, HTML5",
+      "image": "R.drawable.imgp"
+    },
+    {
+      "id": "8",
+      "name": "SAADAT UMAR ALIYU",
+      "phone": "08165869402",
+      "email": "developer@hisemail.com",
+      "github": "@Developer",
+      "hub": "Developer's IT Hub",
+      "area": "Web Development",
+      "specialzation": "PHP, HTML5",
+      "image": "R.drawable.imgs"
+    },
+    {
+      "id": "9",
+      "name": "AISHA ABDULHAMID",
+      "phone": "08165869402",
+      "email": "developer@hisemail.com",
+      "github": "@Developer",
+      "hub": "Developer's IT Hub",
+      "area": "Web Development",
+      "specialzation": "PHP, HTML5",
+      "image": "R.drawable.imga"
+    }
+
+  ]
+}

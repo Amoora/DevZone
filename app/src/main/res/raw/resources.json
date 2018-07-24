@@ -1,0 +1,47 @@
+{
+  "Resources":[
+
+    {
+      "id": "0",
+      "title": "LEARN DJANGO",
+      "detail": "Use Django to deploy ur first app",
+      "type": "Note",
+      "points": "@52",
+      "author": "Timoty"
+    },
+    {
+      "id": "1",
+      "title": "LEARN JAVA",
+      "detail": "08165869402",
+      "type": "PDF",
+      "points": "@55",
+      "author": "Peter"
+    },
+    {
+      "id": "2",
+      "title": "LEARN VUE.JS",
+      "detail": "introductin to vue js for beginners ",
+      "type": "Text",
+      "points": "59",
+      "author": "Auwal MS"
+    },
+    {
+      "id": "3",
+      "title": "USING ELECTRON JS",
+      "detail": "learn how to create a cross platform appp using electron js",
+      "type": "PDF",
+      "ponts": "@24",
+      "author": "Aminu BIN"
+    },
+    {
+      "id": "4",
+      "title": "GHITHUB",
+      "detail": "learn how to easily use github",
+      "type": "developer@hisemail.com",
+      "ponts": "@87",
+      "author": "D Zango"
+    }
+
+
+  ]
+}
