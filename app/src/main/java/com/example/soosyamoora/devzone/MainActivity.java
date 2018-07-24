@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.facebook.login.LoginManager;
@@ -13,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MyActivity";
 
 
     @Override
@@ -20,32 +23,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView text = findViewById(R.id.devcommtext);
-          text.setOnClickListener(new View.OnClickListener() {
+        ImageView devComm = findViewById(R.id.devcommtext);
+        devComm.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 openListDevCommActivity();
             }
         });
-//        CardView cardViewDev = findViewById(R.id.eventCard);
-//            cardViewDev.setOnClickListener(new View.OnClickListener(){
-//
-//                @Override
-//                public void onClick(View v) {
-//                    openEventList();
-//                }
-//            });
-    }
 
+        ImageView imageView = findViewById(R.id.devs);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDev();
+            }
+        });
+    }
+    public void openDev(){
+        Intent intent = new Intent(this, DevelopersActivity.class);
+        startActivity(intent);
+    }
     public void openListDevCommActivity() {
         Intent intent = new Intent(this, ListDevComm.class);
         startActivity(intent);
     }
 
-    public void openEventList(){
-        Intent intent = new Intent (this, EventActivity.class );
-        startActivity(intent);
-    }
+//    public void openEventList(){
+//        Intent intent = new Intent (this, EventActivity.class );
+//        startActivity(intent);
+//    }
 
     public void logout(View view){
         FirebaseAuth.getInstance().signOut();

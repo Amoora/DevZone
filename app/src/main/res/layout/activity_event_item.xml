@@ -37,7 +37,6 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
-        android:layout_alignBottom="@+id/image_Details"
         android:layout_alignParentEnd="true"
         android:background="#c94c4c"
         android:text="Join"

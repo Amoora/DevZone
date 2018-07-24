@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <com.github.abdularis.civ.CircleImageView
+                android:id="@+id/DevImg"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="-40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imgd"
+                />
+
+
+            <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Div Name"/>
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Phone"/>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Email"/>
+            <TextView
+                android:id="@+id/specialization"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Specialization"/>
+
+            <TextView
+                android:id="@+id/github"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="Github"/>
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Area"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+    </LinearLayout>
+
