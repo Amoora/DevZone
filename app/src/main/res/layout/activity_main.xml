@@ -2,70 +2,94 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo2"
+            />
+
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:clipToPadding="false">
+        android:layout_marginTop="40dp"
+        android:clipToPadding="false"
+        android:gravity="center">
+
         <android.support.v7.widget.CardView
-            android:layout_height="150dp"
             android:layout_width="140dp"
-            android:layout_margin="10dp">
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:id="@id/devcommtext">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/redPrimary"
                     android:padding="10dp"
-                    android:src="@drawable/ic_computer_black_24dp"/>
+                    android:src="@drawable/ic_computer_black_24dp" />
+
                 <TextView
-                    android:onClick="devCommunity"
+                    android:id="@+id/devcommtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Dev Community"/>
+                    android:onClick="devCommunity"
+                    android:text="Dev Community"
+                    android:textStyle="bold" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/cardview_light_background"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="10dp"
+                    android:background="@color/cardview_light_background" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
-            android:layout_height="150dp"
             android:layout_width="140dp"
-            android:layout_margin="10dp" >
+            android:layout_height="150dp"
+            android:layout_margin="10dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/redPrimary"
                     android:padding="10dp"
-                    android:src="@drawable/ic_people_outline_black_24dp"/>
+                    android:src="@drawable/ic_people_outline_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Events"/>
+                    android:text="Developers"
+                    android:textStyle="bold" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/cardview_light_background"
-                    android:layout_margin="10dp" />
+                    android:layout_margin="10dp"
+                    android:background="@color/cardview_light_background" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
@@ -86,7 +110,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/redPrimary"
                     android:padding="10dp"
                     android:src="@drawable/ic_perm_device_information_black_24dp"/>
                 <TextView
@@ -105,7 +129,8 @@
         <android.support.v7.widget.CardView
             android:layout_height="150dp"
             android:layout_width="140dp"
-            android:layout_margin="10dp" >
+            android:layout_margin="10dp"
+            android:id="@+id/eventCard">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -114,15 +139,15 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/ic_search_black_24dp"
+                    android:background="@color/redPrimary"
                     android:padding="10dp"
-                    android:src="@drawable/ic_search_black_24dp"/>
+                    android:src="@drawable/ic_perm_device_information_black_24dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Resources "/>
+                    android:text="Events "/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -131,5 +156,10 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignOut"
+        android:onClick="logout"
+        android:id="@+id/log_out"/>
 </LinearLayout>

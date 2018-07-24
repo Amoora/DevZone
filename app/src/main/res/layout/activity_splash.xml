@@ -3,20 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E53935"
-    tools:context=".SplashScreen">
+    tools:context=".SplashScreen"> j
 
     <ImageView
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:paddingLeft="100dp"
         android:paddingTop="50dp"
-        android:src="@drawable/ic_computer_black_24dp" />
+        android:src="@drawable/logo" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="30sp" />
 
 </android.support.constraint.ConstraintLayout>
