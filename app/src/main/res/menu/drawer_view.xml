@@ -17,7 +17,7 @@
     </group>
     <item
         android:id="@+id/aa"
-        android:title="____________________" />
+        android:title="________________" />
 
     <item
         android:id="@+id/navlogout"
