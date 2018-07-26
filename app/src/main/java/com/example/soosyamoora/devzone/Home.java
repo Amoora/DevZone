@@ -1,5 +1,6 @@
 package com.example.soosyamoora.devzone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
+
+import com.facebook.login.LoginManager;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,12 +28,57 @@ public class Home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+
+        LinearLayout m;
+        m = (LinearLayout) findViewById(R.id.openres);
+
+        m.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+
+                Intent intent = (new Intent(Home.this, Resources.class));
+                startActivity(intent);
+
+            }
+        });
+
+
+        LinearLayout Dev;
+        Dev = (LinearLayout) findViewById(R.id.opendev);
+
+        Dev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = (new Intent(Home.this, DevelopersActivity.class));
+                startActivity(intent);
+
+            }
+        });
+
+        LinearLayout Community;
+        Community = (LinearLayout) findViewById(R.id.opecomunity);
+
+        Community.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = (new Intent(Home.this, ListDevComm.class));
+                startActivity(intent);
+
+            }
+        });
+
+        LinearLayout Events;
+        Events = (LinearLayout) findViewById(R.id.openevents);
+
+        Events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = (new Intent(Home.this, EventActivity.class));
+                startActivity(intent);
+
             }
         });
 
@@ -40,6 +90,11 @@ public class Home extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+    private void goLoginScreen() {
+        Intent intent = new Intent(this,SignInActivity.class );
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override
@@ -55,7 +110,7 @@ public class Home extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home, menu);
+        getMenuInflater().inflate(R.menu.drawer_view, menu);
         return true;
     }
 
@@ -64,14 +119,17 @@ public class Home extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.navlogout:
+                FirebaseAuth.getInstance().signOut();
+                LoginManager.getInstance().logOut();
+                goLoginScreen();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+                break;
+            default:
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -80,17 +138,26 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.navcommunities) {
+            Intent intent = new Intent(Home.this,ListDevComm.class);
+            startActivity(intent);
+        } else if (id == R.id.navdevelopers) {
+            Intent intent = new Intent(Home.this,DevelopersActivity.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.navresources) {
+            Intent intent = new Intent(Home.this,Resources.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.navevent) {
+            Intent intent = new Intent(Home.this,EventActivity.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.navlogout) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.navexit) {
+            finish();
+            System.exit(0);
 
         }
 

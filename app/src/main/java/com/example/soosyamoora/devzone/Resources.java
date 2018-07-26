@@ -64,16 +64,16 @@ public class Resources extends AppCompatActivity {
             resourceArray = new ResourcesClass[rJsonArray.length()];
 
             imagesArray = new int[]{
-                    R.drawable.imgm,
-                    R.drawable.imgd,
-                    R.drawable.imgp,
-                    R.drawable.imgs,
-                    R.drawable.imga,
-                    R.drawable.imgm,
-                    R.drawable.imgd,
-                    R.drawable.imgp,
-                    R.drawable.imgs,
-                    R.drawable.imga,
+                    R.drawable.index,
+                    R.drawable.inde,
+                    R.drawable.index,
+                    R.drawable.inde,
+                    R.drawable.index,
+                    R.drawable.inde,
+                    R.drawable.index,
+                    R.drawable.inde,
+                    R.drawable.index,
+                    R.drawable.inde,
 
 
 

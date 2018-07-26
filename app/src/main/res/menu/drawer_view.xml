@@ -13,5 +13,13 @@
         <item
             android:id="@+id/nav_manage"
             android:title="tools" />
+
     </group>
+    <item
+        android:id="@+id/aa"
+        android:title="____________________" />
+
+    <item
+        android:id="@+id/navlogout"
+        android:title="Logout" />
 </menu>

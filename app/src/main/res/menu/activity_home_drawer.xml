@@ -2,25 +2,41 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/Home"
+                android:icon="@drawable/com_facebook_auth_dialog_header_background"
+                android:title="DASHBOARD" />
+
+        </menu>
+    </item>
     </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navqa"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Questions And Answers" />
+        <item
+            android:id="@+id/navcommunities"
+            android:icon="@drawable/ic_computer_black_24dp"
+            android:title="Dev. Communities" />
+        <item
+            android:id="@+id/navdevelopers"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Developers" />
+        <item
+            android:id="@+id/navresources"
+            android:icon="@drawable/ic_perm_device_information_black_24dp"
+            android:title="Resources" />
+        <item
+            android:id="@+id/navevent"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Events" />
+    </group>
+    <group android:checkableBehavior="single">
 
     <item android:title="Communicate">
         <menu>
@@ -34,5 +50,16 @@
                 android:title="Send" />
         </menu>
     </item>
+    </group>
+    <group android:checkableBehavior="single">
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/navexit"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Exit" />
 
+        </menu>
+    </item>
+    </group>
 </menu>

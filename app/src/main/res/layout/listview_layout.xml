@@ -9,11 +9,13 @@
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp">
+    android:layout_marginTop="10dp"
+    android:background="@color/white">
         <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-            <com.github.abdularis.civ.CircleImageView
+
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/DevImg"
                 android:layout_width="200dp"
                 android:layout_height="120dp"
@@ -21,7 +23,7 @@
                 android:layout_marginEnd="-40dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/imgd"
-                />
+                app:civ_circle_background_color="@color/colorAccent"/>
 
 
             <LinearLayout
