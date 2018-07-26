@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/event_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="40dp"
+        android:text="Developer Circles kano"
+        android:textColor="#000"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/event_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/image_name"
+        android:text="An Evnt fo all women in tech and aspire to be"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/view_event"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:background="#c94c4c"
+        android:text="Join"
+        android:textColor="#ffff" />
+</RelativeLayout>
